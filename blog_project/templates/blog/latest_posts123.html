@@ -1,0 +1,11 @@
+<!-- <ul>
+  {%for post in letest_posts%}
+    <li>{{post.title}}</li>
+  {%endfor%}
+</ul> -->
+
+<ul>
+  {%for post in letest_posts%}
+    <li><a href="{{post.get_absolute_url}}">{{post.title}}</a></li>
+  {%endfor%}
+</ul>
